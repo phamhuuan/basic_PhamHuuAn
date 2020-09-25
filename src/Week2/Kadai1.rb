@@ -2,7 +2,7 @@ time = Time.now
 currentYear = time.year
 ignoreYear = [1916, 1940, 1944]
 startYear = 1896
-year = gets.to_i
+year = gets.chomp.to_i
 
 if year > currentYear
   puts "Current year is #{currentYear}. I don't know Olympic will occur or not :>!"
