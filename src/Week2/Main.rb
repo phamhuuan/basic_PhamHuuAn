@@ -19,3 +19,29 @@ if c.instance_of? Array
     end
   }
 end
+
+c.push({text: "Meow"})
+c.each do |iter|
+  puts iter
+end
+d = {text: "Meow meow", type: "Cat", info: {age: 5}}
+e = {type: "Cat", text: "Meow meow", info: {age: 5}}
+p d == e
+p "Meow".length
+p %w(1 "hello" true)
+p %w({word: "text"})
+p "Hello world".split(" ")
+p %w(Hello\ world My\ name\ is\ An)
+p %r(1 2 4)
+h = {:text => "This is text"}
+p h
+f = {a: 1, b: 2, c: 3}
+f.each do |element|
+  p element
+end
+f[:d] = 4
+p f
+p f[:a]
+
+user = {name: ["Name 1", "Name 2"], age: 12}
+p user
